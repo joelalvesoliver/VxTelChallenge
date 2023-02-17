@@ -1,8 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System.Diagnostics.CodeAnalysis;
 
 namespace SpeakMore.Application.Shared.Exceptions
 {
+    [ExcludeFromCodeCoverage]
     public class BaseErrorResponse
     {
 

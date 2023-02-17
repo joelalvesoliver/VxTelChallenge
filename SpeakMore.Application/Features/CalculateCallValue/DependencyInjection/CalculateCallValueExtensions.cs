@@ -2,9 +2,11 @@
 using SpeakMore.Application.Features.CalculateCallValue.UseCase;
 using System.Reflection;
 using MediatR;
+using System.Diagnostics.CodeAnalysis;
 
 namespace SpeakMore.Application.Features.CalculateCallValue.DependencyInjection
 {
+    [ExcludeFromCodeCoverage]
     public static class CalculateCallValueExtensions
     {
         public static IServiceCollection AddCalculateCallValueExtensions(this IServiceCollection services) =>

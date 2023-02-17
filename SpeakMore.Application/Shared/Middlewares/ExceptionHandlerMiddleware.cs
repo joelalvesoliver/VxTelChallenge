@@ -4,11 +4,13 @@ using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
 using SpeakMore.Application.Shared.Exceptions;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 using System.Net.Mime;
 using System.Text;
 
 namespace SpeakMore.Application.Shared.Middlewares
 {
+    [ExcludeFromCodeCoverage]
     public class ExceptionHandlerMiddleware
     {
         private readonly RequestDelegate _requestDelegate;

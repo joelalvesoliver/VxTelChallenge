@@ -1,5 +1,8 @@
-﻿namespace SpeakMore.Application.Features.CalculateCallValue.Models
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace SpeakMore.Application.Features.CalculateCallValue.Models
 {
+    [ExcludeFromCodeCoverage]
     public class CalculateCallValueOutput
     {
         public string WithSpeakMore { get; set; }

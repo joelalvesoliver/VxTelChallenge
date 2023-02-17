@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeakMore.WebApi", "SpeakMore.WebApi\SpeakMore.WebApi.csproj", "{2C3CB7D5-F7FC-4747-8B97-AC9860BFD45B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeakMore.WebApi", "SpeakMore.WebApi\SpeakMore.WebApi.csproj", "{2C3CB7D5-F7FC-4747-8B97-AC9860BFD45B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{ADC993E9-79E3-475E-99A8-52FC47A1C4F3} = {ADC993E9-79E3-475E-99A8-52FC47A1C4F3}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeakMore.Application", "SpeakMore.Application\SpeakMore.Application.csproj", "{ADC993E9-79E3-475E-99A8-52FC47A1C4F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeakMore.Application", "SpeakMore.Application\SpeakMore.Application.csproj", "{ADC993E9-79E3-475E-99A8-52FC47A1C4F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{97CF2421-01A4-4E5C-9724-24E227C69C3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AE4C15B0-8569-42C8-BD28-CD8DED0DD701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeakMore.UnitTests", "SpeakMore.UnitTests\SpeakMore.UnitTests.csproj", "{83AE782B-6053-44FE-866F-B8E587EF12A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,9 +30,18 @@ Global
 		{ADC993E9-79E3-475E-99A8-52FC47A1C4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADC993E9-79E3-475E-99A8-52FC47A1C4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADC993E9-79E3-475E-99A8-52FC47A1C4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83AE782B-6053-44FE-866F-B8E587EF12A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83AE782B-6053-44FE-866F-B8E587EF12A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83AE782B-6053-44FE-866F-B8E587EF12A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83AE782B-6053-44FE-866F-B8E587EF12A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C3CB7D5-F7FC-4747-8B97-AC9860BFD45B} = {AE4C15B0-8569-42C8-BD28-CD8DED0DD701}
+		{ADC993E9-79E3-475E-99A8-52FC47A1C4F3} = {AE4C15B0-8569-42C8-BD28-CD8DED0DD701}
+		{83AE782B-6053-44FE-866F-B8E587EF12A2} = {97CF2421-01A4-4E5C-9724-24E227C69C3E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F76B00A6-442F-40F2-98B0-EE910B39AA2C}

@@ -1,9 +1,11 @@
 ﻿using Newtonsoft.Json;
 using SpeakMore.Application.Shared.Exceptions;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace SpeakMore.Application.Shared.Extensions
 {
+    [ExcludeFromCodeCoverage]
     public static class ObjectExtensions
     {
         public static string ToJson(this object obj)

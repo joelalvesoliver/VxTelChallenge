@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics.CodeAnalysis;
 
 namespace SpeakMore.Application.Shared.Exceptions
 {
+    [ExcludeFromCodeCoverage]
     public class InvalidRequestException : BaseException
     {
         private const string ERROR_MESSAGE = "Invalid request!!";

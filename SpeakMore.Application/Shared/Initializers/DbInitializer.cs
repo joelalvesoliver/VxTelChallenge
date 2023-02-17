@@ -1,8 +1,10 @@
 ﻿using SpeakMore.Application.Shared.Context;
 using SpeakMore.Application.Shared.Domain.Entities;
+using System.Diagnostics.CodeAnalysis;
 
 namespace SpeakMore.Application.Shared.Initializers
 {
+    [ExcludeFromCodeCoverage]
     public static class DbInitializer
     {
         public static void Initialize(ApplicationDbContext context)

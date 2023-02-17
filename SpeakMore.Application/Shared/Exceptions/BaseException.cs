@@ -1,8 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 
 namespace SpeakMore.Application.Shared.Exceptions
 {
+    [ExcludeFromCodeCoverage]
     public class BaseException : Exception
     {
 

@@ -3,9 +3,11 @@ using SpeakMore.Application.Shared.Context;
 using SpeakMore.Application.Shared.Domain.Contracts;
 using SpeakMore.Application.Shared.Repositories;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.CodeAnalysis;
 
 namespace SpeakMore.Application.Shared.DependencyInjection
 {
+    [ExcludeFromCodeCoverage]
     public static class DataBaseExtensions
     {
         public static IServiceCollection AddDataBaseExtensions(this IServiceCollection services) =>

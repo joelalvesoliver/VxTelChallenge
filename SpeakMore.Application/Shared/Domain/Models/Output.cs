@@ -1,5 +1,8 @@
-﻿namespace SpeakMore.Application.Shared.Domain.Models
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace SpeakMore.Application.Shared.Domain.Models
 {
+    [ExcludeFromCodeCoverage]
     public class Output<T>
     {
         public bool Sucess => Data is not null;
